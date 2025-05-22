@@ -1,0 +1,5 @@
+{
+  "model_preferences": {
+    "general": "deepseek/deepseek-r1-distill-qwen-32b:free"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "month": "2025-05",
+  "total_tokens": 21656,
+  "prompt_tokens": 3002,
+  "completion_tokens": 18654,
+  "models": {
+    "qwen/qwen3-32b:free": {
+      "total_tokens": 2929,
+      "prompt_tokens": 1905,
+      "completion_tokens": 1024,
+      "requests": 1,
+      "task_types": {
+        "general": {
+          "total_tokens": 2929,
+          "prompt_tokens": 1905,
+          "completion_tokens": 1024,
+          "requests": 1
+        }
+      }
+    },
+    "microsoft/phi-4-reasoning-plus:free": {
+      "total_tokens": 3679,
+      "prompt_tokens": 790,
+      "completion_tokens": 2889,
+      "requests": 3,
+      "task_types": {
+        "general": {
+          "total_tokens": 3679,
+          "prompt_tokens": 790,
+          "completion_tokens": 2889,
+          "requests": 3
+        }
+      }
+    },
+    "meta-llama/llama-4-maverick:free": {
+      "total_tokens": 72,
+      "prompt_tokens": 28,
+      "completion_tokens": 44,
+      "requests": 1,
+      "task_types": {
+        "general": {
+          "total_tokens": 72,
+          "prompt_tokens": 28,
+          "completion_tokens": 44,
+          "requests": 1
+        }
+      }
+    },
+    "qwen/qwen3-235b-a22b:free": {
+      "total_tokens": 4185,
+      "prompt_tokens": 85,
+      "completion_tokens": 4100,
+      "requests": 2,
+      "task_types": {
+        "general": {
+          "total_tokens": 4185,
+          "prompt_tokens": 85,
+          "completion_tokens": 4100,
+          "requests": 2
+        }
+      }
+    },
+    "deepseek/deepseek-chat-v3-0324:free": {
+      "total_tokens": 619,
+      "prompt_tokens": 30,
+      "completion_tokens": 589,
+      "requests": 2,
+      "task_types": {
+        "general": {
+          "total_tokens": 619,
+          "prompt_tokens": 30,
+          "completion_tokens": 589,
+          "requests": 2
+        }
+      }
+    },
+    "microsoft/mai-ds-r1:free": {
+      "total_tokens": 1853,
+      "prompt_tokens": 32,
+      "completion_tokens": 1821,
+      "requests": 2,
+      "task_types": {
+        "general": {
+          "total_tokens": 1853,
+          "prompt_tokens": 32,
+          "completion_tokens": 1821,
+          "requests": 2
+        }
+      }
+    },
+    "qwen/qwen-2.5-coder-32b-instruct:free": {
+      "total_tokens": 1829,
+      "prompt_tokens": 38,
+      "completion_tokens": 1791,
+      "requests": 2,
+      "task_types": {
+        "general": {
+          "total_tokens": 1829,
+          "prompt_tokens": 38,
+          "completion_tokens": 1791,
+          "requests": 2
+        }
+      }
+    },
+    "google/gemma-3-27b-it:free": {
+      "total_tokens": 1943,
+      "prompt_tokens": 20,
+      "completion_tokens": 1923,
+      "requests": 1,
+      "task_types": {
+        "general": {
+          "total_tokens": 1943,
+          "prompt_tokens": 20,
+          "completion_tokens": 1923,
+          "requests": 1
+        }
+      }
+    },
+    "agentica-org/deepcoder-14b-preview:free": {
+      "total_tokens": 3696,
+      "prompt_tokens": 41,
+      "completion_tokens": 3655,
+      "requests": 2,
+      "task_types": {
+        "general": {
+          "total_tokens": 3696,
+          "prompt_tokens": 41,
+          "completion_tokens": 3655,
+          "requests": 2
+        }
+      }
+    },
+    "arliai/qwq-32b-arliai-rpr-v1:free": {
+      "total_tokens": 851,
+      "prompt_tokens": 33,
+      "completion_tokens": 818,
+      "requests": 1,
+      "task_types": {
+        "general": {
+          "total_tokens": 851,
+          "prompt_tokens": 33,
+          "completion_tokens": 818,
+          "requests": 1
+        }
+      }
+    }
+  },
+  "conversations": 0,
+  "requests": 17
+}

@@ -1,0 +1,659 @@
+/* Dark theme for SilentCodingLegend AI Agent */
+
+/*
+ * Core Elements
+ * These selectors target the main application container and page elements
+ */
+[data-testid="stAppViewContainer"], 
+.stApp, 
+body, 
+.stApp > header,
+.main,
+.main-content,
+div.st-emotion-cache-ue6h4q.e1f1d6gn0,
+div.st-emotion-cache-x78sv8.e1nzilvr5,
+div.st-emotion-cache-16txtl3.e1nzilvr4,
+[data-testid="stHorizontalBlock"],
+[data-testid="stVerticalBlock"],
+section,
+[data-testid="stSidebarContent"],
+[data-testid="stSidebarUserContent"],
+.appview-container,
+[data-testid="stDecoration"] {
+    background-color: #111827 !important;
+    color: #f3f4f6 !important;
+}
+
+/* Fix for white area - ensure main container fills screen */
+[data-testid="stSidebar"] + section.main,
+.main {
+    background-color: #111827 !important;
+    min-height: 100vh !important;
+    width: 100% !important;
+}
+
+/* Container styling */
+.main .block-container,
+div[data-testid="stBlock"] {
+    padding-bottom: 5rem;
+    min-height: calc(100vh - 2rem);
+    max-width: 100%;
+    background-color: #111827 !important;
+}
+
+/*
+ * Sidebar and Navigation
+ */
+[data-testid="stSidebar"] {
+    background-color: #1f2937 !important;
+    border-right: 1px solid #374151 !important;
+}
+
+.sidebar .sidebar-content {
+    background-color: #1f2937 !important;
+}
+
+/* Navigation items */
+[data-testid="stSidebarNav"] li {
+    background-color: transparent !important;
+}
+
+[data-testid="stSidebarNav"] a {
+    color: #f3f4f6 !important;
+    background-color: transparent !important;
+}
+
+[data-testid="stSidebarNav"] a:hover {
+    background-color: #374151 !important;
+}
+
+[data-testid="stSidebarNav"] a[aria-selected="true"] {
+    background-color: #4f46e5 !important;
+    color: white !important;
+}
+
+/*
+ * Form Elements
+ */
+/* File uploader styling */
+[data-testid="stFileUploader"] {
+    background-color: #1f2937 !important;
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid #374151 !important;
+}
+
+[data-testid="stFileUploader"] label {
+    color: #e5e7eb !important;
+}
+
+[data-testid="stFileUploaderDropzone"] {
+    background-color: #2d3748 !important;
+    border-color: #4b5563 !important;
+    color: #e5e7eb !important;
+}
+
+/* Checkbox styling */
+[data-testid="stCheckbox"] {
+    color: #e5e7eb !important;
+}
+
+/* Radio button styling */
+[data-testid="stRadio"] {
+    background-color: transparent !important;
+    color: #e5e7eb !important;
+}
+
+[data-testid="stRadio"] label {
+    color: #e5e7eb !important;
+}
+
+/* Selectbox styling */
+[data-testid="stSelectbox"] {
+    background-color: #1f2937 !important;
+    color: #e5e7eb !important;
+    border-radius: 4px;
+}
+
+[data-testid="stSelectbox"] > div {
+    background-color: #1f2937 !important;
+    color: #e5e7eb !important;
+}
+
+/* Tab styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 2px;
+    background-color: #1f2937 !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: #374151 !important;
+    color: #f3f4f6 !important;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #6366f1 !important;
+    color: #ffffff !important;
+}
+
+.stTabs [data-baseweb="tab-panel"] {
+    background-color: #111827 !important;
+}
+
+/*
+ * Chat Interface
+ */
+/* Style the chat messages */
+[data-testid="stChatMessageContent"],
+[data-testid="stChatMessage"] {
+    background-color: #1e293b !important;
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+    margin: 4px 0px !important;
+    border: 1px solid #2d3748 !important;
+    max-width: 90% !important;
+}
+
+/* User message styling */
+[data-testid="stChatMessage"][data-testid="user"] {
+    background-color: #312e81 !important; /* Indigo 900 */
+    border-color: #4338ca !important; /* Indigo 700 */
+}
+
+/* Assistant message styling */
+[data-testid="stChatMessage"]:not([data-testid="user"]) {
+    background-color: #1e293b !important; /* Slate 800 */
+    border-color: #334155 !important; /* Slate 700 */
+}
+
+/* Style the chat container */
+[data-testid="stChatContainer"] {
+    width: 100% !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    background-color: #111827 !important;
+    border: 1px solid #1e293b !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+}
+
+/* Style the chat input */
+.stChatInputContainer {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important; 
+    right: 0 !important;
+    background-color: #111827 !important;
+    padding: 1rem !important;
+    z-index: 100 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: calc(100% - 1rem) !important;
+    max-width: 800px !important;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3) !important;
+    border-top: 1px solid #1e293b !important;
+}
+
+.stChatInput {
+    background-color: #1f2937 !important;
+    border: 1px solid #374151 !important;
+    border-radius: 8px !important;
+}
+
+.stChatInput textarea {
+    background-color: #1f2937 !important;
+    color: #f3f4f6 !important;
+}
+
+.stChatInput button {
+    background-color: #4f46e5 !important;
+    color: white !important;
+}
+
+/* Add spacer at the bottom */
+.chat-spacer {
+    height: 5rem !important;
+}
+
+/*
+ * Form Input Elements
+ */
+/* Fix for other content with default white background */
+.stTextInput, 
+.stSelectbox, 
+.stSlider,
+.stDateInput,
+.stTimeInput,
+.stTextArea,
+.stNumberInput,
+div[data-baseweb="base-input"],
+div[data-baseweb="select"],
+div[data-baseweb="slider"],
+div.st-bf,
+div.st-af,
+div.st-e0,
+div.st-ag,
+div[data-testid="InputInstructions"],
+div[data-testid="stForm"] {
+    background-color: #111827 !important;
+    color: #f3f4f6 !important;
+}
+
+/* Style inputs and sliders */
+input, 
+textarea, 
+select,
+div[role="combobox"],
+div[role="listbox"],
+div[data-baseweb="select"] div,
+div[data-baseweb="base-input"] div,
+.stSlider div[role="slider"] {
+    background-color: #1f2937 !important;
+    color: #f3f4f6 !important;
+    border-color: #374151 !important;
+}
+
+/* Input focus state */
+input:focus, 
+textarea:focus, 
+select:focus {
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5) !important;
+}
+
+/* Slider track */
+.stSlider div[role="slider"] {
+    background-color: #6366f1 !important;
+}
+
+.stSlider [data-baseweb="slider"] div {
+    background-color: #1f2937 !important;
+}
+
+.stSlider [data-baseweb="slider"] div[role="progressbar"] {
+    background-color: #4f46e5 !important;
+}
+
+/*
+ * Notification and Alert Elements
+ */
+/* Badge styling */
+.stAlert, 
+[data-baseweb="notification"],
+[data-testid="stNotification"] {
+    background-color: #1f2937 !important;
+    color: #f3f4f6 !important;
+    border-radius: 8px !important;
+    border: 1px solid #374151 !important;
+}
+
+/* Info boxes */
+.element-container .stAlert,
+div[data-baseweb="notification"][kind="info"] {
+    background-color: #1e40af !important; /* Blue 800 */
+    color: white !important;
+    border-color: #2563eb !important; /* Blue 600 */
+}
+
+/* Success boxes */
+div[data-baseweb="notification"][kind="positive"],
+.stAlert.success {
+    background-color: #065f46 !important; /* Green 800 */
+    color: white !important;
+    border-color: #059669 !important; /* Green 600 */
+}
+
+/* Warning boxes */
+div[data-baseweb="notification"][kind="warning"],
+.stAlert.warning {
+    background-color: #92400e !important; /* Amber 800 */
+    color: white !important;
+    border-color: #d97706 !important; /* Amber 600 */
+}
+
+/* Error boxes */
+div[data-baseweb="notification"][kind="negative"],
+.stAlert.error {
+    background-color: #991b1b !important; /* Red 800 */
+    color: white !important;
+    border-color: #dc2626 !important; /* Red 600 */
+}
+
+/*
+ * Button Elements
+ */
+/* Primary buttons */
+.stButton > button,
+button[kind="primary"] {
+    background-color: #4f46e5 !important; /* Indigo 600 */
+    color: white !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 0.5rem 1rem !important;
+}
+
+.stButton > button:hover,
+button[kind="primary"]:hover {
+    background-color: #6366f1 !important; /* Indigo 500 */
+    color: white !important;
+}
+
+/* Secondary buttons */
+button[kind="secondary"] {
+    background-color: #1f2937 !important; /* Gray 800 */
+    color: #f3f4f6 !important;
+    border: 1px solid #374151 !important; /* Gray 700 */
+}
+
+button[kind="secondary"]:hover {
+    background-color: #374151 !important; /* Gray 700 */
+}
+
+/* Expanders */
+.streamlit-expanderHeader,
+[data-testid="stExpander"] {
+    background-color: #1f2937 !important;
+    color: #f3f4f6 !important;
+    border-radius: 4px !important;
+}
+
+.streamlit-expanderContent,
+[data-testid="stExpanderContent"] {
+    background-color: #111827 !important;
+    color: #f3f4f6 !important;
+    border: 1px solid #1f2937 !important;
+    border-top: none !important;
+}
+
+/*
+ * Data Display Elements
+ */
+/* Dataframes/Tables */
+.stDataFrame, 
+.dataframe,
+[data-testid="stTable"] {
+    background-color: #1f2937 !important;
+    color: #f3f4f6 !important;
+    border-radius: 8px !important;
+    border: 1px solid #374151 !important;
+}
+
+.dataframe th,
+[data-testid="stTable"] th {
+    background-color: #374151 !important;
+    color: #f3f4f6 !important;
+    border-bottom: 1px solid #4b5563 !important;
+    padding: 0.5rem !important;
+}
+
+.dataframe td,
+[data-testid="stTable"] td {
+    background-color: #1f2937 !important;
+    color: #f3f4f6 !important;
+    border-color: #374151 !important;
+    padding: 0.5rem !important;
+}
+
+/* Alternating rows */
+.dataframe tr:nth-child(even) td,
+[data-testid="stTable"] tr:nth-child(even) td {
+    background-color: #293548 !important;
+}
+
+/* Additional fixes for any content with default white background */
+div[role="main"],
+[data-testid="stMarkdownContainer"],
+[data-testid="stVerticalBlockBorderWrapper"],
+div.stMarkdown,
+div.stMarkdownContainer {
+    background-color: #111827 !important;
+    color: #f3f4f6 !important;
+}
+
+/*
+ * Chart and Visualization Elements
+ */
+/* Chart styling */
+.js-plotly-plot,
+.plotly,
+.stPlotlyChart,
+.user-select-none.svg-container {
+    background-color: #111827 !important;
+}
+
+/* Chart axis labels and titles */
+.plotly .main-svg .g-gtitle,
+.plotly .main-svg .g-xtitle,
+.plotly .main-svg .g-ytitle {
+    fill: #f3f4f6 !important;
+}
+
+/* Chart axes */
+.plotly .main-svg .xtick text,
+.plotly .main-svg .ytick text {
+    fill: #f3f4f6 !important;
+}
+
+/* Legend text */
+.plotly .main-svg .legend text {
+    fill: #f3f4f6 !important;
+}
+
+/* Fix for hover overlay */
+.st-emotion-cache-1y4p8pa,
+div.js-plotly-plot .plotly .modebar {
+    background-color: #1f2937 !important;
+    color: #f3f4f6 !important;
+}
+
+/* Tooltip */
+.plotly .main-svg .hoverlayer .hover {
+    fill: #1f2937 !important;
+    stroke: #374151 !important;
+}
+
+/* Fix any plot controls */
+.js-plotly-plot .plotly .modebar-btn path {
+    fill: #f3f4f6 !important;
+}
+
+/*
+ * Additional Selectors and Fixes
+ */
+/* Fix for any remaining containers */
+div, section {
+    background-color: inherit;
+}
+
+/* Fix any text colors */
+div, p, h1, h2, h3, h4, h5, h6, span, label {
+    color: #f3f4f6 !important;
+}
+
+/* Fix links */
+a {
+    color: #60a5fa !important;
+}
+
+a:hover {
+    color: #93c5fd !important;
+    text-decoration: underline;
+}
+
+/* Fix code blocks */
+code,
+pre,
+.codehilite,
+.highlight {
+    background-color: #1f2937 !important;
+    color: #e5e7eb !important;
+    border: 1px solid #374151 !important;
+    border-radius: 4px !important;
+    padding: 0.2em 0.4em !important;
+}
+
+/* Fix for multiline code blocks */
+pre {
+    padding: 1em !important;
+}
+
+/* Fix borders */
+hr, 
+div[data-testid="stHorizontalBlock"] {
+    border-color: #374151 !important;
+}
+
+/* Fix scrollbars */
+::-webkit-scrollbar {
+    background-color: #111827;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #374151;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #4b5563;
+}
+
+/* Fix dropdowns and popups */
+div[data-baseweb="popover"],
+div[data-baseweb="menu"],
+div[data-baseweb="dropdown"],
+div[data-baseweb="select__dropdown"],
+div[data-baseweb="select__menu"] {
+    background-color: #1f2937 !important;
+    border: 1px solid #374151 !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+div[data-baseweb="select__option"] {
+    background-color: #1f2937 !important;
+    color: #f3f4f6 !important;
+}
+
+div[data-baseweb="select__option"]:hover {
+    background-color: #374151 !important;
+}
+
+/* Markdown elements */
+.markdown-text-container {
+    background-color: #111827 !important;
+    color: #f3f4f6 !important;
+}
+
+/* Image containers */
+[data-testid="stImage"],
+.stImage > div,
+.stImage img {
+    background-color: transparent !important;
+}
+
+/* Fix for white areas in layout containers */
+div.row-widget,
+div.stRow,
+div.css-ffhzg2 {
+    background-color: #111827 !important;
+}
+
+/* Metrics (big numbers) */
+.stMetric {
+    background-color: #1f2937 !important;
+    color: #f3f4f6 !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+    border: 1px solid #374151 !important;
+}
+
+/* JSON display */
+.element-container div pre {
+    background-color: #1f2937 !important;
+    color: #e5e7eb !important;
+    padding: 1em !important;
+    border-radius: 8px !important;
+    border: 1px solid #374151 !important;
+}
+
+/*
+ * Responsive design adjustments
+ */
+@media screen and (max-width: 992px) {
+    .stChatInputContainer {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    .main .block-container {
+        padding: 1rem !important;
+    }
+    
+    [data-testid="stChatContainer"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0.5rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .stChatContainer {
+        max-width: 100% !important;
+    }
+    
+    .stTabs [data-baseweb="tab"] {
+        font-size: 0.8rem !important;
+        padding: 0.5rem !important;
+    }
+    
+    .stChatInputContainer {
+        padding: 0.5rem !important;
+    }
+    
+    .dataframe, 
+    [data-testid="stTable"] {
+        font-size: 0.8rem !important;
+    }
+}
+
+/* Print styles for reports */
+@media print {
+    body, [data-testid="stAppViewContainer"], .stApp {
+        background-color: white !important;
+        color: black !important;
+    }
+    
+    .stSidebar {
+        display: none !important;
+    }
+    
+    .main .block-container {
+        max-width: 100% !important;
+    }
+    
+    .dataframe, .stTable {
+        border: 1px solid #ddd !important;
+    }
+    
+    .dataframe th, .stTable th {
+        background-color: #f0f0f0 !important;
+        color: black !important;
+    }
+    
+    .dataframe td, .stTable td {
+        background-color: white !important;
+        color: black !important;
+    }
+    
+    .stButton, .stChatInputContainer {
+        display: none !important;
+    }
+    
+    @page {
+        margin: 1cm;
+    }
+}
